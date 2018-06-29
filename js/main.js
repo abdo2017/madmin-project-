@@ -9,6 +9,11 @@ setTimeout(function() {
 		$(".section").fadeIn();
         // init sidenav
         $(".button-collapse").sideNav();
+        // init modals
+            $('.modal').modal();
+            // init select
+                $('select').material_select();
+
 
         // hover effect on stats cards
         $(".myCard").hover(function(){
@@ -84,3 +89,19 @@ $(".deny").click(function(e){
         });
     });
 }, 1000);
+
+// ckeditor rules
+CKEDITOR.replace( 'body' );
+
+
+
+
+
+
+
+
+
+
+
+
+

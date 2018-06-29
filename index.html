@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -17,7 +17,7 @@
     <nav class="blue darken-2">
         <div class="container">
             <div class="nav-wrapper">
-                <a href="index.html" class="mylogo brand-logo green-text text-lighten-4">Madmin</a>
+                <a href="index.html" class="mylogo brand-logo teal-text text-lighten-4">Madmin</a>
                 <!-- menu bars icon  -->
                 <a href="#" data-activates="slide-out" class="button-collapse 
       show-on-large left">
@@ -156,91 +156,198 @@
                 <div class="card ">
                     <div class="card-content">
                         <span class="card-title">Recent Posts</span>
-
-      <table class="striped">
-        <thead>
-          <tr>
-              <th>Title</th>
-              <th>Category</th>
-              <th></th>
-          </tr>
-        </thead>
-        <tbody>
-            <!-- post one -->
-          <tr>
-            <td>Post One</td>
-            <td>Web development</td>
-            <td>
-                <a href="details.html" class="btn blue lighten-2">Details</a>
-            </td>
-          </tr>
-          <tr>
-            <!-- post two -->
-            <td>Post two</td>
-            <td>Graphic Desgin</td>
-            <td>
-                <a href="details.html" class="btn blue lighten-2">Details</a>
-            </td>
-          </tr>
-          <tr>
-            <!-- post three -->
-            <td>Post Three</td>
-            <td>Web development</td>
-            <td>
-                <a href="details.html" class="btn blue lighten-2">Details</a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-            
+                        <table class="striped">
+                            <thead>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Category</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- post one -->
+                                <tr>
+                                    <td>Post One</td>
+                                    <td>Web development</td>
+                                    <td>
+                                        <a href="details.html" class="btn blue lighten-2">Details</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <!-- post two -->
+                                    <td>Post two</td>
+                                    <td>Graphic Desgin</td>
+                                    <td>
+                                        <a href="details.html" class="btn blue lighten-2">Details</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <!-- post three -->
+                                    <td>Post Three</td>
+                                    <td>Web development</td>
+                                    <td>
+                                        <a href="details.html" class="btn blue lighten-2">Details</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
-
-    
             </div>
             <!-- todos list  -->
             <div class="col s12 m12 l4">
-<div class="card">
-    <div class="card-content">
-        <span class="card-title">Quick Todos</span>
-        <!-- todos input form -->
-        <form id="todo-form">
-            <div class="input-field">
-                <input type="text" name="" id="todo" placeholder="add todo...">
-            </div>
-        </form>
-<!-- todos list -->
-      <ul class="collection todos">
-        <li class="collection-item">
-            <div>Todo one
-                <a href="#!" class="secondary-content delete">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title">Quick Todos</span>
+                        <!-- todos input form -->
+                        <form id="todo-form">
+                            <div class="input-field">
+                                <input type="text" name="" id="todo" placeholder="add todo...">
+                            </div>
+                        </form>
+                        <!-- todos list -->
+                        <ul class="collection todos">
+                            <li class="collection-item">
+                                <div>Todo one
+                                    <a href="#!" class="secondary-content delete">
                     <i class="material-icons">close</i>
                 </a>
-            </div>
-        </li>   
-             <li class="collection-item">
-            <div>Todo two
-                <a href="#!" class="secondary-content delete">
+                                </div>
+                            </li>
+                            <li class="collection-item">
+                                <div>Todo two
+                                    <a href="#!" class="secondary-content delete">
                     <i class="material-icons">close</i>
                 </a>
-            </div>
-        </li>    
-
-      </ul>
-            
-    </div>
-</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-<!-- end section todos -->
-<!-- footer -->
-<footer class="section blue darken-2 white-text center">
-    <p>Madmin Panel Copyright &copy; 2018</p>
-</footer>
+    <!-- end section todos -->
+    <!-- footer -->
+    <footer class="section blue darken-2 white-text center">
+        <p>Madmin Panel Copyright &copy; 2018</p>
+    </footer>
+    <!-- end footer -->
+    <!-- fixed action button  -->
+    <div class="fixed-action-btn">
+        <a class="btn-large btn-floating red ">
+        <i class="material-icons">add</i>
+    </a>
+        <ul>
+            <li>
+                <a href="#modal1" class="btn-floating blue modal-trigger">
+            <i class="material-icons">mode_edit</i>
+        </a>
+            </li>
+            <li>
+                <a href="#modal2" class="btn-floating blue modal-trigger">
+            <i class="material-icons">folder</i>
+        </a>
+            </li>
+            <li>
+                <a href="#modal3" class="btn-floating blue modal-trigger">
+                <i class="material-icons">supervisor_account</i>
+        </a>
+            </li>
+        </ul>
+    </div>
 
 
 
+
+    <!-- add modal1 -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>add Post</h4>
+            <form>
+                <div class="input-field">
+                    <input type="text" id="title">
+                    <label for="title">Title</label>
+                </div>
+                <div class="input-field">
+                    <select>
+                        <option value="" disabled selected>Select option</option>
+                        <option value="Web development">Web Development</option>
+                        <option value="Graphic design">Graphic design</option>
+                        <option value="Tech Gadgates">Tech Gadgates</option>
+                        <option value="Tech Gadgates">Tech Gadgates</option>
+                        <option value="other">other</option>
+                    </select>
+                    <label>Category</label>
+                </div>
+                <div class="input-field">
+                    <textarea name="body" id="body" class="materialize-textarea"></textarea>
+                </div>
+                            <div class="modal-footer">
+              <a href="#!" class="modal-action modal-close waves-effect waves-light btn blue">Submit</a>
+            </div>
+            </form>
+
+        </div>
+
+    </div>
+    <!-- end modal 1-->
+
+
+    <!-- add modal2 -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <h4>add Category</h4>
+            <form>
+                <div class="input-field">
+                    <input type="text" id="title">
+                    <label for="title">Title</label>
+                </div>
+
+            <div class="modal-footer">
+              <a href="#!" class="modal-action modal-close waves-effect waves-light btn blue">Submit</a>
+            </div>
+            </form>
+
+        </div>
+
+    </div>
+    <!-- end modal 2-->
+
+ <!-- add modal3-->
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <h4>add User</h4>
+            <form>
+                <div class="input-field">
+                    <input type="text" id="name">
+                    <label for="name">Name</label>
+                </div>              
+
+                  <div class="input-field">
+                    <input type="email" id="email">
+                    <label for="email">Email</label>
+                </div>                
+
+                <div class="input-field">
+                    <input type="password" id="password">
+                    <label for="password">password</label>
+                </div>                
+
+                <div class="input-field">
+                    <input type="password" id="confirm">
+                    <label for="confirm">Confirm password</label>
+                </div>
+                
+            <div class="modal-footer">
+              <a href="#!" class="modal-action modal-close waves-effect waves-light btn blue">Submit</a>
+            </div>
+            </form>
+
+        </div>
+
+    </div>
+    <!-- end modal 3-->
 
     <!-- section preloader -->
     <div class="loader preloader-wrapper big active">
@@ -263,8 +370,11 @@
     <script type="text/javascript" src="js/canvasjs.min.js"></script>
     <!-- materialize js file -->
     <script type="text/javascript" src="js/materialize.js "></script>
+        <!-- ckeditor -->
+    <script src="https://cdn.ckeditor.com/4.9.2/standard/ckeditor.js"></script>
     <!--  main js file-->
     <script type="text/javascript" src="js/main.js "></script>
+
     <!-- my chart js file -->
     <script type="text/javascript" src="js/chart.js"></script>
 </body>
