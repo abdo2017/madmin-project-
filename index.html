@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project 3</title>
+    <!-- materialzie css file -->
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+    <!-- main css file -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body class="grey lighten-4">
+    <nav class="blue darken-2">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo">Madmin</a>
+                <!-- menu bars icon  -->
+                <a href="#" data-activates="slide-out" class="button-collapse 
+      show-on-large right">
+        <i class="material-icons">menu</i>
+    </a>
+                <!-- navbar list icons -->
+                <ul class="right hide-on-med-and-down">
+                    <li class="active"><a href="index.html">Dashboard </a></li>
+                    <li><a href="posts.html">posts</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="comments.html">Comments</a></li>
+                    <li><a href="users.html">users</a></li>
+                </ul>
+                <!-- sidenav menu -->
+                <ul id="slide-out" class="side-nav">
+                    <li>
+                        <div class="user-view">
+                            <div class="background">
+                                <img src="img/busy-busy-street-city-1191375.jpg">
+                            </div>
+                            <a href="#!user"><img class="circle" src="img/purple.jpg"></a>
+                            <a href="#!name"><span class="white-text name">David goggins</span></a>
+                            <a href="#!name"><span class="white-text email">davidgoggins@yahoo.com</span></a>
+                        </div>
+                    </li>
+                    <li><a href="index.html">  <i class="material-icons">dashboard</i>Dashboard </a></li>
+                    <li><a href="posts.html">posts</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="comments.html">Comments</a></li>
+                    <li><a href="users.html">users</a></li>
+                    <li>
+                        <div class="divider"></div>
+                    </li>
+                    <li><a href="" class="subheader">Account controls</a></li>
+                    <li><a href=".index.html" class="waves-effect">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end nav -->
+    <!-- section :stats -->
+    <section class="section section-stats center">
+        <div class="row">
+            <!-- 1st box -->
+            <div class="col s12 m6 l3">
+                <div class="myCard card-panel blue lighten-1 white-text">
+                    <i class="material-icons medium">insert_emoticon</i>
+                    <h5>Monthly visitors</h5>
+                    <h3 class="count">28300</h3>
+                    <div class="progress grey lighten-1">
+                        <div class="determinate white" style="width: 40%"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- 2nd box -->
+            <div class="col s12 m6 l3">
+                <div class=" myCard card-panel">
+                    <i class="material-icons medium">mode_edit</i>
+                    <h5>blog posts</h5>
+                    <h3 class="count">105</h3>
+                    <div class="progress grey lighten-1">
+                        <div class="determinate blue lighten-1" style="width: 20%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 3rd box -->
+            <div class="col s12 m6 l3">
+                <div class="myCard card-panel blue lighten-1 white-text">
+                    <i class="material-icons medium">mode_comment</i>
+                    <h5>Comments</h5>
+                    <h3 class="count">1200</h3>
+                    <div class="progress grey lighten-1">
+                        <div class="determinate white" style="width: 40%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 4th box -->
+            <div class="col s12 m6 l3">
+                <div class="myCard card-panel">
+                    <i class="material-icons medium">supervisor_account</i>
+                    <h5>Users</h5>
+                    <h3 class="count">350</h3>
+                    <div class="progress grey lighten-1">
+                        <div class="determinate blue lighten-1" style="width: 20%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- end section -->
+    <!-- section chart -->
+    <section class="section section-visitors blue lighten-4">
+        <div class="row">
+            <div class="col s12 m12 l8">
+                <div class="card-panel myChart">
+                    <div id="chartContainer" style="height: 300px; width: 100%;">
+                    </div>
+                </div>
+            </div>
+            <!-- send section chart  -->
+            <!-- start section comment -->
+            <div class="col s12 m12 l4 card-panel myComment ">
+                <ul class="collection with-header latest-comments">
+                    <li class="collection-header">
+                        <h5>Latest comments</h5>
+                    </li>
+                    <li class="collection-item avatar">
+                        <img src="img/smile1.jpg" alt="" class="circle">
+                        <span class="title">David goggins</span>
+                        <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore expedita aperiam, inventore nam fugit animi nesciunt, quae rem dicta laboriosam vero est at cum iste accusamus totam fugiat minus ex.
+                        </p>
+                        <a href="" class="approve green-text">Approve</a> |
+                        <a href="" class="deny red-text">Deny</a>
+                    </li>
+                    <li class="collection-item avatar">
+                        <img src="img/smile2.jpg" alt="" class="circle">
+                        <span class="title">Elon musk</span>
+                        <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore expedita aperiam, inventore nam fugit animi nesciunt, quae rem dicta laboriosam vero est at cum iste accusamus totam fugiat minus ex.
+                        </p>
+                        <a href="" class="approve green-text">Approve</a> |
+                        <a href="" class="deny red-text">Deny</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- end section comments -->
+    <!-- section recent -->
+    <section class="section section-recent">
+        <div class="row">
+            <div class="col s12 m12 l8">
+                <div class="card ">
+                    <div class="card-content">
+                        <span class="card-title">Recent Posts</span>
+
+      <table class="striped">
+        <thead>
+          <tr>
+              <th>Title</th>
+              <th>Category</th>
+              <th></th>
+          </tr>
+        </thead>
+        <tbody>
+            <!-- post one -->
+          <tr>
+            <td>Post One</td>
+            <td>Web development</td>
+            <td>
+                <a href="details.html" class="btn blue lighten-2">Details</a>
+            </td>
+          </tr>
+          <tr>
+            <!-- post two -->
+            <tr>
+            <td>Post two</td>
+            <td>Graphic Desgin</td>
+            <td>
+                <a href="details.html" class="btn blue lighten-2">Details</a>
+            </td>
+          </tr>
+          </tr>
+          <tr>
+            <!-- post three -->
+            <tr>
+            <td>Post Three</td>
+            <td>Web development</td>
+            <td>
+                <a href="details.html" class="btn blue lighten-2">Details</a>
+            </td>
+          </tr>
+          </tr>
+        </tbody>
+      </table>
+            
+                    </div>
+                </div>
+
+    
+            </div>
+            <!-- todos list  -->
+            <div class="col s12 m12 l4">
+<div class="card">
+    <div class="card-content">
+        <span class="card-title">Quick Todos</span>
+        <!-- todos input form -->
+        <form id="todo-form">
+            <div class="input-field">
+                <input type="text" name="" id="todo" placeholder="add todo...">
+            </div>
+        </form>
+<!-- todos list -->
+      <ul class="collection todos">
+        <li class="collection-item">
+            <div>Todo one
+                <a href="#!" class="secondary-content delete">
+                    <i class="material-icons">close</i>
+                </a>
+            </div>
+        </li>   
+             <li class="collection-item">
+            <div>Todo two
+                <a href="#!" class="secondary-content delete">
+                    <i class="material-icons">close</i>
+                </a>
+            </div>
+        </li>    
+
+      </ul>
+            
+    </div>
+</div>
+            </div>
+        </div>
+    </section>
+<!-- end section todos -->
+<!-- footer -->
+<footer class="section blue darken-2 white-text center">
+    <p>Madmin Panel Copyright &copy; 2018</p>
+</footer>
+
+
+
+
+    <!-- section preloader -->
+    <div class="loader preloader-wrapper big active">
+        <div class="spinner-layer spinner-blue-only">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+                <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
+    <!--  end section preloader -->
+    <!-- jquery file -->
+    <script type="text/javascript" src="js/jquery.js "></script>
+    <!-- canvas js file -->
+    <script type="text/javascript" src="js/canvasjs.min.js"></script>
+    <!-- materialize js file -->
+    <script type="text/javascript" src="js/materialize.js "></script>
+    <!--  main js file-->
+    <script type="text/javascript" src="js/main.js "></script>
+    <!-- my chart js file -->
+    <script type="text/javascript" src="js/chart.js"></script>
+</body>
+
+</html>
