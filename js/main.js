@@ -3,6 +3,7 @@ $(".section").hide();
 
 setTimeout(function() {
     jQuery(document).ready(function($) {
+
         // fadeout preloader
         $(".loader").fadeOut();
         // show sections    
@@ -51,8 +52,9 @@ $(".deny").click(function(e){
 });
 // quick todos
     $("form#todo-form").submit(function(event) {
-        event.preventDefault();
-        const newLi = `        <li class="collection-item">
+            event.preventDefault();
+
+                        const newLi = `        <li class="collection-item">
             <div> ${ $("#todo").val() }
                 <a href="#!" class="secondary-content delete">
                     <i class="material-icons">close</i>
@@ -63,6 +65,7 @@ $(".deny").click(function(e){
           Materialize.toast('todo added!', 4000) 
 
         $("input#todo").val("");
+
 });
 
 // activate the close button on the todo

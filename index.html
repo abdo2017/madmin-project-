@@ -20,7 +20,7 @@
                 <a href="index.html" class="mylogo brand-logo teal-text text-lighten-4">Madmin</a>
                 <!-- menu bars icon  -->
                 <a href="#" data-activates="slide-out" class="button-collapse 
-      show-on-large left">
+      show-on-large right">
         <i class="material-icons">menu</i>
     </a>
                 <!-- navbar list icons -->
@@ -43,7 +43,7 @@
                             <a href="#!name"><span class="white-text email">davidgoggins@yahoo.com</span></a>
                         </div>
                     </li>
-                    <li><a href="index.html">  <i class="material-icons">dashboard</i>Dashboard </a></li>
+                    <li class="active"><a href="index.html">  <i class="material-icons">dashboard</i>Dashboard </a></li>
                     <li><a href="posts.html">posts</a></li>
                     <li><a href="categories.html">Categories</a></li>
                     <li><a href="comments.html">Comments</a></li>
@@ -52,7 +52,7 @@
                         <div class="divider"></div>
                     </li>
                     <li><a href="" class="subheader">Account controls</a></li>
-                    <li><a href=".index.html" class="waves-effect">Logout</a></li>
+                    <li><a href="login.html" class="waves-effect">Logout</a></li>
                 </ul>
             </div>
         </div>
@@ -64,7 +64,7 @@
             <!-- 1st box -->
             <div class="col s12 m6 l3">
                 <div class="myCard card-panel blue lighten-1 white-text">
-                    <i class="material-icons medium">insert_emoticon</i>
+                    <i class="material-icons small">insert_emoticon</i>
                     <h5>Monthly visitors</h5>
                     <h3 class="count">28300</h3>
                     <div class="progress grey lighten-1">
@@ -75,7 +75,7 @@
             <!-- 2nd box -->
             <div class="col s12 m6 l3">
                 <div class=" myCard card-panel">
-                    <i class="material-icons medium">mode_edit</i>
+                    <i class="material-icons small">mode_edit</i>
                     <h5>blog posts</h5>
                     <h3 class="count">105</h3>
                     <div class="progress grey lighten-1">
@@ -87,7 +87,7 @@
             <!-- 3rd box -->
             <div class="col s12 m6 l3">
                 <div class="myCard card-panel blue lighten-1 white-text">
-                    <i class="material-icons medium">mode_comment</i>
+                    <i class="material-icons small">mode_comment</i>
                     <h5>Comments</h5>
                     <h3 class="count">1200</h3>
                     <div class="progress grey lighten-1">
@@ -99,7 +99,7 @@
             <!-- 4th box -->
             <div class="col s12 m6 l3">
                 <div class="myCard card-panel">
-                    <i class="material-icons medium">supervisor_account</i>
+                    <i class="material-icons small">supervisor_account</i>
                     <h5>Users</h5>
                     <h3 class="count">350</h3>
                     <div class="progress grey lighten-1">
@@ -202,7 +202,7 @@
                         <!-- todos input form -->
                         <form id="todo-form">
                             <div class="input-field">
-                                <input type="text" name="" id="todo" placeholder="add todo...">
+                                <input type="text" name="" id="todo" placeholder="add todo..." required>
                             </div>
                         </form>
                         <!-- todos list -->
@@ -239,17 +239,17 @@
         <i class="material-icons">add</i>
     </a>
         <ul>
-            <li>
+            <li title="add a post">
                 <a href="#modal1" class="btn-floating blue modal-trigger">
             <i class="material-icons">mode_edit</i>
         </a>
             </li>
-            <li>
+            <li title="add category">
                 <a href="#modal2" class="btn-floating blue modal-trigger">
             <i class="material-icons">folder</i>
         </a>
             </li>
-            <li>
+            <li title="add user">
                 <a href="#modal3" class="btn-floating blue modal-trigger">
                 <i class="material-icons">supervisor_account</i>
         </a>

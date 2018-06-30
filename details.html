@@ -20,13 +20,13 @@
                 <a href="index.html" class="mylogo brand-logo teal-text text-lighten-4">Madmin</a>
                 <!-- menu bars icon  -->
                 <a href="#" data-activates="slide-out" class="button-collapse 
-      show-on-large left">
+      show-on-large right">
         <i class="material-icons">menu</i>
     </a>
                 <!-- navbar list icons -->
                 <ul class="right hide-on-med-and-down">
                     <li><a href="index.html">Dashboard </a></li>
-                    <li class="active"><a href="posts.html">posts</a></li>
+                    <li><a href="posts.html">posts</a></li>
                     <li><a href="categories.html">Categories</a></li>
                     <li><a href="comments.html">Comments</a></li>
                     <li><a href="users.html">users</a></li>
@@ -52,127 +52,77 @@
                         <div class="divider"></div>
                     </li>
                     <li><a href="" class="subheader">Account controls</a></li>
-                    <li><a href=".index.html" class="waves-effect">Logout</a></li>
+                    <li><a href="login.html" class="waves-effect">Logout</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- end nav -->
-    <!-- section :posts -->
-    <section class="section section-posts grey lighten-4">
+    <!-- section :details -->
+    <section class="section section-details grey lighten-4">
         <div class="container">
-            <div class="row">
-                <div class="col s12">
-                    <div class="card">
-                        <div class="card-content">
-                            <span class="cart-title">Posts</span>
-                            <table class="striped">
-                            <thead>
-                                <tr>
-                                    <th>Title</th>
-                                    <th>Category</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <!-- post one -->
-                                <tr>
-                                    <td>Post One</td>
-                                    <td>Web development</td>
-                                    <td>
-                                        <a href="details.html" class="btn blue lighten-2">Details</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <!-- post two -->
-                                    <td>Post two</td>
-                                    <td>Graphic Desgin</td>
-                                    <td>
-                                        <a href="details.html" class="btn blue lighten-2">Details</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <!-- post three -->
-                                    <td>Post Three</td>
-                                    <td>Web development</td>
-                                    <td>
-                                        <a href="details.html" class="btn blue lighten-2">Details</a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-
+            <div class="card">
+                <!-- card content -->
+                <div class="card-content">
+                    <div class="row">
+                        <div class="col s12 m6">
+                            <span class="card-title">Post Details</span>
+                        </div>
+                        <div class="col s12 m6 center">
+                            <img src="img/smile1.jpg" class="responsive-img circle" style="width:70px;margin-left: 10px;">
+                            <p>Posted by john Doe</p>
+                            <p>Jan 10, 2018</p>
                         </div>
                     </div>
+                    <!-- post form -->
+                    <form>
+                        <div class="input-field">
+                            <input type="text" id="title" value="Post one">
+                            <label for="title">Title</label>
+                        </div>
+                        <div class="input-field">
+                            <select>
+                                <option value="" disabled>Select option</option>
+                                <option value="Web development" selected>Web Development</option>
+                                <option value="Graphic design">Graphic design</option>
+                                <option value="Tech Gadgates">Tech Gadgates</option>
+                                <option value="Tech Gadgates">Tech Gadgates</option>
+                                <option value="other">other</option>
+                            </select>
+                            <label>Category</label>
+                        </div>
+                        <div class="input-field">
+                            <textarea name="body" id="body" class="materialize-textarea">This is the content for the post one</textarea>
+                        </div>
+                    </form>
+                    <!-- end post form -->
+                </div>
+                <div class="card-action">
+                    <a href="#" class=" waves-effect waves-light btn green">Save</a>
+                    <a href="#modal1" class="modal-trigger btn red waves-effect waves-light ">Delete</a>
                 </div>
             </div>
         </div>
     </section>
-    
     <!-- footer -->
     <footer class="section blue darken-2 white-text center">
         <p>Madmin Panel Copyright &copy; 2018</p>
     </footer>
     <!-- end footer -->
-    <!-- fixed action button  -->
-    <div class="fixed-action-btn">
-        <a class="btn-large btn-floating red ">
-        <i class="material-icons">add</i>
-    </a>
-        <ul>
-            <li>
-                <a href="#modal1" class="btn-floating blue modal-trigger">
-            <i class="material-icons">mode_edit</i>
-        </a>
-            </li>
-            <li>
-                <a href="#modal2" class="btn-floating blue modal-trigger">
-            <i class="material-icons">folder</i>
-        </a>
-            </li>
-            <li>
-                <a href="#modal3" class="btn-floating blue modal-trigger">
-                <i class="material-icons">supervisor_account</i>
-        </a>
-            </li>
-        </ul>
-    </div>
-
-
-
-
-    <!-- add modal1 -->
+    <!-- modal for delete a post] -->
     <div id="modal1" class="modal">
         <div class="modal-content">
-            <h4>add Post</h4>
-            <form>
-                <div class="input-field">
-                    <input type="text" id="title">
-                    <label for="title">Title</label>
-                </div>
-                <div class="input-field">
-                    <select>
-                        <option value="" disabled selected>Select option</option>
-                        <option value="Web development">Web Development</option>
-                        <option value="Graphic design">Graphic design</option>
-                        <option value="Tech Gadgates">Tech Gadgates</option>
-                        <option value="Tech Gadgates">Tech Gadgates</option>
-                        <option value="other">other</option>
-                    </select>
-                    <label>Category</label>
-                </div>
-                <div class="input-field">
-                    <textarea name="body" id="body" class="materialize-textarea"></textarea>
-                </div>
-                            <div class="modal-footer">
-              <a href="#!" class="modal-action modal-close waves-effect waves-light btn blue">Submit</a>
-            </div>
-            </form>
-
+            <h4>Delte a Post?</h4>
+            <p>are you sure you want to delete a post?</p>
         </div>
-
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close btn red"  onclick="Materialize.toast('Done!', 4000)">Yes!</a>
+            <a href="#!" class="modal-action modal-close btn blue">No!</a>
+        </div>
     </div>
-    <!-- end modal 1-->
+    <!-- end modal -->
+
+
 
     <!-- section preloader -->
     <div class="loader preloader-wrapper big active">
@@ -190,15 +140,16 @@
     </div>
     <!--  end section preloader -->
 
+
+
     <!-- jquery file -->
     <script type="text/javascript" src="js/jquery.js "></script>
     <!-- materialize js file -->
     <script type="text/javascript" src="js/materialize.js "></script>
-        <!-- ckeditor -->
+    <!-- ckeditor -->
     <script src="https://cdn.ckeditor.com/4.9.2/standard/ckeditor.js"></script>
     <!--  main js file-->
     <script type="text/javascript" src="js/main.js "></script>
-
 </body>
 
 </html>

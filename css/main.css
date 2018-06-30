@@ -6,5 +6,20 @@
 	left:48%;
 }
 .mylogo {
-	padding-left: 2em !important;
+	font-size: 1.5rem !important;
+	line-height: 64px;
 }
+.section-comments {
+	min-height: calc( 100vh - (64px + 52px ) );
+}
+/*login extend submit button*/
+.btn-extend {
+	width: 100%;
+	display: block;
+	margin-top: 1.6em;
+}
+.section-login {
+	margin-bottom: 3em;
+	margin-top: 3em;
+}
+
